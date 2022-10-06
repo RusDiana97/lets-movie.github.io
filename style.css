@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar,
+.sidebar {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  animation: logo-menu-animation 4s ease-in-out;
+}
+
+@keyframes logo-menu-animation {
+  0% {
+    letter-spacing: 0.1rem;
+    opacity: 1;
+    padding-top: 0;
+  }
+  50% {
+    letter-spacing: 0.3rem;
+    opacity: 0;
+    padding-top: 50px;
+  }
+  100% {
+    letter-spacing: 0.1rem;
+    opacity: 1;
+    padding-top: 0;
+  }
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+  animation: logo-menu-animation 4s ease-in-out;
+}
+
+.menu-list-item-link {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-list-item-link:hover {
+  background-color: red;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toogle-theme {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+}
+
+.toogle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.sidebar-menu-icon {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.sidebar-menu-icon:hover {
+  background-color: red;
+  transform: translateX(15px);
+}
+
+.container {
+  background-color: rgb(34, 34, 34);
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content-1 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(34, 34, 34)),
+    url("./images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+}
+
+.featured-content-2 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(34, 34, 34)),
+    url("./images/alex-litvin-MAYsdoYpGuk-unsplash.jpg");
+}
+
+.featured-content-3 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(34, 34, 34)),
+    url("./images/kilyan-sockalingum-nW1n9eNHOsc-unsplash.jpg");
+}
+
+.featured-content-4 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(34, 34, 34)),
+    url("./images/rob-laughter-WW1jsInXgwM-unsplash.jpg");
+}
+
+.featured-content-5 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(34, 34, 34)),
+    url("./images/patrick-perkins-Z3_uSvERPfM-unsplash.jpg");
+}
+
+.featured-content-1,
+.featured-content-2,
+.featured-content-3,
+.featured-content-4,
+.featured-content-5 {
+  height: 50vh;
+  padding: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.featured-title-movie {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  width: 500px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.featured-content-animation {
+  animation: animation-featured 4s;
+}
+
+@keyframes animation-featured {
+  0% {
+    padding-left: 0;
+    color: white;
+  }
+  50% {
+    padding-left: 100px;
+    color: red;
+  }
+  100% {
+    padding-left: 0;
+    color: white;
+  }
+}
+
+.featured-description-movie {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  width: 500px;
+  color: lightgrey;
+}
+
+.featured-movie-button {
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  border: 0.1rem solid white;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  transition: all 0.2s linear;
+}
+
+.featured-movie-button:hover {
+  background-color: red;
+  border: 0.1rem solid red;
+  transform: scale(1.1);
+  margin-left: 10px;
+}
+
+.movie-list-container {
+  padding: 20px;
+}
+
+.movie-list-container-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
+  margin: 10px 0;
+}
+
+.movie-list-container-title-animation {
+  animation: movie-list-title-animation 4s ease-in-out;
+}
+
+@keyframes movie-list-title-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.movie-list-item-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.1);
+  margin: 0 20px;
+  opacity: 0.2;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-description,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  top: 20%;
+  left: 20px;
+  width: 220px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item-description {
+  font-weight: 200;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  top: 30%;
+  left: 20px;
+  width: 220px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item-button {
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 0.1 solid white;
+  cursor: pointer;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.movie-list-item-button:hover {
+  background-color: red;
+  border: 0.1rem solid red;
+  transform: scale(1.1);
+  left: 25px;
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+  padding: 0 20px;
+}
+
+.arrow-left {
+  left: 0;
+}
+.arrow-right {
+  right: 0;
+}
+
+footer {
+  margin-left: 50px;
+  background-color: rgb(34, 34, 34);
+  height: 100px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-description {
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+/*light theme*/
+.container.active {
+  background-color: white;
+}
+
+.movie-list-container-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+  color: black;
+}
+
+.menu-list.active {
+  color: black;
+}
+
+.menu-list-item-link.active {
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+
+.sidebar-menu-icon.active {
+  color: black;
+}
+
+.arrow-left.active {
+  color: black;
+}
+.arrow-right.active {
+  color: black;
+}
+
+.toogle-theme.active {
+  background-color: lightgray;
+}
+
+.toogle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+footer.active {
+  background-color: white;
+  color: black;
+}
+
+.footer-link.active {
+  color: black;
+}
+
+@media only screen and (max-width: 940px) {
+  .menu-container {
+    display: none;
+  }
+
+  .featured-title-movie {
+    width: 300px;
+  }
+
+  .featured-description-movie {
+    width: 200px;
+  }
+}
