@@ -35,6 +35,12 @@ You can see the logo of the site, the navigation bar, the sidebar and some anima
 
 You can use the toggle for switching to the light theme:
 
+![see](gifs/toggle-gif.gif)
+
+Navigate on the site with the help of the navigation bar positioned on the top and with the help of the fixed sidebar:
+
+![see](gifs/nagivation-gif.gif)
+
 ## 4. Credits
 
  - [Images](https://unsplash.com)
