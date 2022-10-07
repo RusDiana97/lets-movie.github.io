@@ -41,6 +41,16 @@ Navigate on the site with the help of the navigation bar positioned on the top a
 
 ![see](gifs/nagivation-gif.gif)
 
+Do you want to see what's popular on the site? Just click on the Popular!
+
+![see](gifs/click-gif.gif)
+
+Or you can just scroll on the page and used the slider to see what's popular:
+
+![see](gifs/scroll-gif.gif)
+
+See more on [LIVE DEMO](rusdiana97.github.io/lets-movie.github.io/)!
+
 ## 4. Credits
 
  - [Images](https://unsplash.com)
