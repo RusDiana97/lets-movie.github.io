@@ -21,7 +21,7 @@ In this case, you have two choices:
 1. download the entire project on your computer from Code -> Download Zip and open the index.html file on your browser for running the project
 2. click on [LIVE DEMO](rusdiana97.github.io/lets-movie.github.io/) for running the project on your browser (you won't download the project)
 
-**I recommand you to see the [LIVE DEMO](rusdiana97.github.io/lets-movie.github.io/) of the project.**
+**I recommend you to see the [LIVE DEMO](rusdiana97.github.io/lets-movie.github.io/) of the project.**
 
 ## 3. How to Use the Project
 
