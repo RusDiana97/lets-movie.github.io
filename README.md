@@ -1,4 +1,4 @@
-# Movie site :film_projector: :clapper: | [LIVE DEMO](rusdiana97.github.io/lets-movie.github.io/)
+# Movie site :film_projector: :clapper: | [LIVE DEMO](https://rusdiana97.github.io/lets-movie.github.io/)
 
 ## 1. Project Description
 
